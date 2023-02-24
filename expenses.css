@@ -1,0 +1,243 @@
+body {
+    height: 100vh;
+    margin:0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background-color:#F7E9DC;
+    font-family:'DM Sans', sans-serif;
+}
+
+article{
+    width: 90%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center; 
+    margin-top:1em;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+#first{
+    background-color:#EB755E;
+    margin-top:4em;
+    color:white;
+    width:92%;
+    height:6em;
+    border-radius:0.6em;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.logo{
+    margin-right:1.3em;
+}
+.balance{
+    margin-left:1.3em;
+}
+.🤗{
+    line-height:0.4em;
+}
+.🤑{
+    font-size:1.5em;
+    line-height:0.4em;
+}
+
+#second{
+    margin-top:1em;
+    display:flex;
+    flex-direction:column;
+    background-color:#FFFCF7;   
+    width:92%;
+    border-radius:0.6em;
+}
+.spending{
+    margin-top:1em;
+    margin-left:1em;
+    font-size:1.4rem;
+    font-weight: 700;
+}
+.days{
+    display:flex;
+    justify-content:center;
+    width:92%;
+    margin-left:1em;
+    margin-top:3em;
+    border-bottom:0.1em solid #F7E9DC;
+}
+.days > div {
+    margin-left:0.35em;
+    margin-right:0.35em;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:12%;
+    text-align:center;
+    margin-bottom:2em;
+    color:#B0ABA5;
+    position: relative;
+}
+
+.days > div > div {
+    
+    width:100%;
+    border-radius:0.2em;
+    margin-bottom:1em;
+}
+#mon-chart{
+    height:2.7em;
+    background-color:#EB755E;
+}
+#tue-chart{
+    height:6.3em;
+    background-color:#EB755E;
+}
+#wed-chart{
+    height:9em;
+    background-color:#76B5BC;
+}
+#thu-chart{
+    height:5.4em;
+    background-color:#EB755E;
+}
+#fri-chart{
+    height:3.6em;
+    background-color:#EB755E;
+}
+#sat-chart{
+    height:7.65em;
+    background-color:#EB755E;
+}
+#sun-chart{
+    height:4.5em;
+    background-color:#EB755E;
+}
+.tue{
+    margin-top:2.7em;
+}
+.thu{
+    margin-top:3.6em;
+}
+.fri{
+    margin-top:5.4em;
+}
+.sat{
+    margin-top:1.35em;
+}
+.sun{
+    margin-top:4.5em;
+}
+.mon{
+    margin-top:6.3em;
+}
+.bottom{
+    display:flex;
+    justify-content: space-between;
+    margin-left:1.3em;
+    margin-right:1.3em;
+    margin-top:1em;
+    margin-bottom:0.8em;
+}
+.month{
+    text-align:right;
+    margin-left:4.2em;
+    line-height:0.4em;
+    margin-top:1em;
+}
+.month :first-child{
+    margin-bottom: 0.5em;
+}
+.total{
+    line-height:0.5em;
+}
+.total :first-child{
+     color:#B0ABA5;
+     font-size: 0.9rem;
+     margin-bottom: 0em;
+ }
+.price{
+    font-size:1.9em;
+    font-weight: 700;
+    line-height: 1rem;
+    margin: 0em;
+    margin-top: 0.5em;
+}
+.last{
+    color:#B0ABA5;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    margin-top: 0em;
+}
+
+#mon-display, #tue-display, #wed-display, #thu-display, #fri-display, #sat-display, #sun-display{
+    position:absolute;
+    background-color:#2E1B0D;
+    color:white;
+    display:none;
+    width:100%;
+    font-size:0.7rem;
+    padding:0.5em;
+    top:-2.7em;
+    left:-0.5em;
+}
+
+#mon-chart:hover {
+    background-color:#FF9B87;
+    transition:0.4s ease-in-out;
+}
+#tue-chart:hover {
+    background-color:#FF9B87;
+    transition:0.4s ease-in-out;
+}
+#wed-chart:hover {
+    background-color:#B4DFE5;
+    transition:0.4s ease-in-out;
+}
+#thu-chart:hover {
+    background-color:#FF9B87;
+    transition:0.4s ease-in-out;
+}
+#fri-chart:hover {
+    background-color:#FF9B87;
+    transition:0.4s ease-in-out;
+}
+#sat-chart:hover {
+    background-color:#FF9B87;
+    transition:0.4s ease-in-out;
+}
+#sun-chart:hover {
+    background-color:#FF9B87;
+    transition:0.4s ease-in-out;
+}
+
+@media screen and (min-width: 1024px){
+    article {
+        width: 40%;
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    article {
+        width: 60%;
+   }
+}
+
+@media screen and (min-width: 281px) and (max-width: 375px){
+    article {
+        width: 95%;
+   }
+}
+
+@media screen and (max-width: 280px){
+    article {
+        width: 100%;
+   }
+}
